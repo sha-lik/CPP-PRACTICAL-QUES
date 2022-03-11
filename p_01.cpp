@@ -31,11 +31,10 @@ int main(int argc, char *argv[])
         cout << "Enter your number : ";
         cin >> n;
         cout << Series(n);
+        exit(-1);
     }
+    
     cout << endl;
-    // cout << argv[0];
-    cout << "argc = : " << argc << endl;
-
     int i;
     double sum = 0.0;
     char *n = argv[1];
