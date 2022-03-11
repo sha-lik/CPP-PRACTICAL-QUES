@@ -22,7 +22,7 @@ int main()
     ofstream f2;
     f2.open("Question_13_output.txt");
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 5; i++)
     {
         Student obj;
 
@@ -35,6 +35,8 @@ int main()
 
         cin >> obj.Class >> obj.Year >> obj.TotalMarks;
         f2 << obj.Class << "  " << obj.Year << "  " << obj.TotalMarks << endl;
+
+        cout << "\n---------------------------------\n";
     }
 
     return 0;

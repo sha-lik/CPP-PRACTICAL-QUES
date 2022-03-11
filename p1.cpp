@@ -32,12 +32,15 @@ int main(int argc, char *argv[])
         cin >> n;
         cout << Series(n);
     }
+    cout << endl;
+    // cout << argv[0];
+    cout << "argc = : " << argc << endl;
 
     int i;
     double sum = 0.0;
     char *n = argv[1];
 
-    for (i = 1; i <= (*n - 48); ++i) // because ASCII of '0' is 48;
+    for (i = 1; i <= (*argv[1] - 48); ++i) // because ASCII of '0' is 48;
     {
 
         if (i % 2 == 0)
